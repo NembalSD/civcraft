@@ -50,8 +50,8 @@ public class SyncUpdateTags implements Runnable {
 						if (player == resPlayer) {
 							continue;
 						}
-						iTag.getInstance().refreshPlayer(player, resPlayer);
-						iTag.getInstance().refreshPlayer(resPlayer, player);
+						iTag.instance.refreshPlayer(player, resPlayer);
+						iTag.instance.refreshPlayer(resPlayer, player);
 					} catch (CivException e) {
 						// one of these players is not online.
 					}

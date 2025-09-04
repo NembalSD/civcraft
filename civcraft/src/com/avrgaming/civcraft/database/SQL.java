@@ -106,6 +106,14 @@ public class SQL {
 		SQL.password = CivSettings.getStringBase("mysql.password");
 		SQL.tb_prefix = CivSettings.getStringBase("mysql.table_prefix");
 		SQL.dsn = "jdbc:mysql://" + hostname + ":" + port + "/" + tb_prefix+db_name;
+		if (SQL.dsn.contains("?")) {
+			SQL.dsn += "&useSSL=false";
+		} else {
+			SQL.dsn += "?useSSL=false";
+		}
+		String gameParams = CivSettings.getStringBase("mysql.params");
+		SQL.dsn = SQLParams.appendJdbcParams(SQL.dsn, gameParams);
+		CivLog.info("\t Effective JDBC url (GAME):" + SQL.dsn);
 		SQL.min_conns = Integer.valueOf(CivSettings.getStringBase("mysql.min_conns"));
 		SQL.max_conns = Integer.valueOf(CivSettings.getStringBase("mysql.max_conns"));
 		SQL.parts = Integer.valueOf(CivSettings.getStringBase("mysql.parts"));
@@ -114,6 +122,7 @@ public class SQL {
 
 		CivLog.info("\t Building Connection Pool for GAME database.");
 		gameDatabase = new ConnectionPool(SQL.dsn, SQL.username, SQL.password, SQL.min_conns, SQL.max_conns, SQL.parts);
+		
 		CivLog.info("\t Connected to GAME database");
 		
 		CivLog.heading("Initializing Global SQL Database");
@@ -127,6 +136,14 @@ public class SQL {
 		SQL.global_parts = Integer.valueOf(CivSettings.getStringBase("global_database.parts"));
 
 		SQL.global_dsn = "jdbc:mysql://"+ SQL.global_hostname + ":" + SQL.global_port + "/" + SQL.global_db;
+		if (SQL.global_dsn.contains("?")) {
+			SQL.global_dsn += "&useSSL=false";
+		} else {
+			SQL.global_dsn += "?useSSL=false";
+		}
+		String globalParams = CivSettings.getStringBase("global_database.params");
+		SQL.global_dsn = SQLParams.appendJdbcParams(SQL.global_dsn, globalParams);
+		CivLog.info("\t Effective JDBC url (global):" + SQL.global_dsn);
 		CivLog.info("\t Using GLOBAL db at:"+SQL.global_hostname+":"+SQL.global_port+" user:"+SQL.global_username+" DB:"+SQL.global_db);
 		CivLog.info("\t Building Connection Pool for GLOBAL database.");
 		globalDatabase = new ConnectionPool(SQL.global_dsn, SQL.global_username, SQL.global_password, SQL.global_min_conns, SQL.global_max_conns, SQL.global_parts);

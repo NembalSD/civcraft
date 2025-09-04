@@ -517,7 +517,7 @@ public class Town extends SQLObject {
 		Player player = Bukkit.getPlayer(res.getUUID());
 		if (player != null && CivSettings.hasITag)
 		{
-			iTag.getInstance().refreshPlayer(player, new HashSet<>(Bukkit.getOnlinePlayers()));
+			iTag.instance.refreshPlayer(player, new HashSet<>(Bukkit.getOnlinePlayers()));
 		}
 	}
 	
@@ -1294,7 +1294,7 @@ public class Town extends SQLObject {
 		Player player = Bukkit.getPlayer(resident.getUUID());
 		if (player != null && CivSettings.hasITag)
 		{
-			iTag.getInstance().refreshPlayer(player, new HashSet<>(Bukkit.getOnlinePlayers()));
+			iTag.instance.refreshPlayer(player, new HashSet<>(Bukkit.getOnlinePlayers()));
 		}
 	}
 

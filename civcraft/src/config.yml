@@ -50,6 +50,7 @@ mysql:
    min_conns: '5'
    max_conns: '10'
    parts: '3'
+   params: 'useSSL=false'
    
 global_database:
     database: global
@@ -60,6 +61,7 @@ global_database:
     min_conns: '5'
     max_conns: '10'
     parts: '3'
+    params: 'useSSL=false'
 
 server_phase: 'beta8'
 
