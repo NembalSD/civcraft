@@ -7,25 +7,25 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/bonecp.jar"/>
-	<classpathentry kind="lib" path="lib/CustomMobs-4.17.jar"/>
 	<classpathentry kind="lib" path="lib/dhutils.jar"/>
-	<classpathentry kind="lib" path="lib/dynmap-civcraft.jar"/>
 	<classpathentry kind="lib" path="lib/guava.jar"/>
-	<classpathentry kind="lib" path="lib/Herochat.jar"/>
 	<classpathentry kind="lib" path="lib/json.jar"/>
-	<classpathentry kind="lib" path="lib/junit-4.13.2.jar"/>
 	<classpathentry kind="lib" path="lib/MobLib.jar"/>
-	<classpathentry kind="lib" path="lib/mockito-all-1.10.19.jar"/>
-	<classpathentry kind="lib" path="lib/NoCheatPlus.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-simple.jar"/>
-	<classpathentry kind="lib" path="lib/TagAPI-1.1.8.jar"/>
-	<classpathentry kind="lib" path="lib/TitleAPI.jar"/>
 	<classpathentry kind="lib" path="lib/VanishNoPacket.jar"/>
-	<classpathentry kind="lib" path="lib/Vault-1.4.1.jar"/>
-	<classpathentry kind="lib" path="lib/WorldBorder.jar"/>
-	<classpathentry kind="lib" path="lib/worldedit-bukkit-6.1.7.2.jar"/>
-	<classpathentry kind="lib" path="lib/worldguard-6.2.jar"/>
-	<classpathentry kind="lib" path="lib/spigot-1.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/plugins/spigot-1.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/plugins/mockito-all-1.10.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/plugins/junit-4.13.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/plugins/TagAPI-1.1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/plugins/worldguard-6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/plugins/Vault-1.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/plugins/worldedit-bukkit-6.1.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/plugins/CustomMobs-4.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/plugins/dynmap-civcraft.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/plugins/TitleAPI.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/plugins/Herochat.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/plugins/WorldBorder.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/plugins/NoCheatPlus.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
